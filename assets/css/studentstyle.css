@@ -1,0 +1,135 @@
+/* Styling for the student dashboard */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    background-color: #2f3640;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #353b48;
+    color: #ffffff;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+.main-content h2 {
+    text-align: center;
+    color: #2f3640;
+    margin-bottom: 30px;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course-card h3 {
+    color: #2f3640;
+}
+
+.course-card h4 {
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.course-card ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.course-card ul li {
+    margin-bottom: 8px;
+}
+
+.course-card a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.course-card a:hover {
+    text-decoration: underline;
+}
+
+.dashboard-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.icon-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.icon-card i {
+    font-size: 3em;
+    color: #3498db;
+}
+
+.icon-card p {
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.icon-card:hover {
+    transform: translateY(-10px);
+}

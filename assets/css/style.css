@@ -1,0 +1,397 @@
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Full Animated Gradient Background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #d6dee0, #b8b84e, #c2c2c2, #e3e3e3);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3.5em;
+    
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Styling for the welcome message */
+.welcome-message {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.welcome-message h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-color: #000; /* Black sidebar */
+    color: #fff; /* White text */
+    padding: 10px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #d14e11; /* Add a highlight color for the header */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    color: #fff;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Common Card Styling */
+.card {
+    width: 23%;  /* 4 cards per row */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 40px;
+    color: #333;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 1cqi;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Unique Background Colors for Each Card */
+.card-1 {
+    background: linear-gradient(to right, #6ccde2, #d5d5cb);  /* Original Blue-Gray */
+}
+
+.card-2 {
+    background: linear-gradient(to right, #ff9a9e, #fecfef);  /* Original Pink */
+}
+
+.card-3 {
+    background: linear-gradient(to right, #7F00FF, #E100FF);  /* New Purple Gradient */
+}
+
+.card-4 {
+    background: linear-gradient(to right, #FFB75E, #ED8F03);  /* New Orange-Gold Gradient */
+}
+
+.card-5 {
+    background: linear-gradient(to right, #43cea2, #185a9d);  /* New Green-Blue Gradient */
+}
+
+.card-6 {
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);  /* New Peach-Pink Gradient */
+}
+
+/* Card Content Styling */
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+
+/* Form Styling */ 
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 95%; /* Reduce width to leave space from the container's edges */
+    margin: 0 auto; /* Center the fields */
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Hover and focus effects for blue border */
+input:hover, select:hover, textarea:hover,
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff; /* Blue border */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Blue glow on hover/focus */
+    outline: none; /* Remove the default outline */
+}
+
+/* Button Styling */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Same width for both buttons */
+    margin: 10px 0; /* Space between the buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Blue Button */
+.blue-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.blue-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Green Button */
+.green-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.green-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Delete and Edit Button Styling */
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.red-btn {
+    background-color: rgb(223, 30, 30);
+}
+
+
+.delete-button:hover {
+    background-color: darkred;
+}
+
+.edit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-button:hover {
+    background-color: #218838;
+}
+
+/* Table Styling */
+table {
+    width: 100%;  /* Set table width to 100% */
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Modal container */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal content */
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Pagination styling */
+.dataTables_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.dataTables_info {
+    font-size: 14px;
+}
+
+.dataTables_paginate {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center pagination controls */
+}
+
+.paginate_button {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+}
+
+.paginate_button.current {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.paginate_button.disabled {
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* Pagination container styling */
+#pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pagination button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#pagination button:hover {
+    background-color: #0b7dda;
+}
+
+#pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#page-info {
+    margin: 0 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+}

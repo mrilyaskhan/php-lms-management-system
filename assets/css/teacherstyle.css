@@ -1,0 +1,145 @@
+/* Full Gradient Background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #d6dee0, #ddddd3);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(135deg, #14bbde, #c2c017);
+    padding: 20px 0;
+    border-bottom: 3px solid #c2c017;
+    display: flex;
+    justify-content: center; /* Centering the profile text */
+    align-items: center;
+    position: relative; /* To position logout on the right */
+}
+
+.logout-btn {
+    position: absolute;
+    right: 20px; /* Positioned on the right side */
+    padding: 10px 20px;
+    background-color: transparent; /* Make the button background initially transparent */
+    color: white; /* The text remains white */
+    font-size: 18px; /* Set font size */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.logout-btn:hover {
+    background-color: #ff5e57; /* Show red background on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add box shadow effect */
+}
+
+
+.header-content {
+    color: white;
+    text-align: center; /* Center the text */
+}
+
+.header-content h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.header-content p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Centering Text */
+.container h2, .container h3, .container p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Styling for the Main Heading */
+.container h2 {
+    font-size: 36px;
+    color: rgb(19, 16, 16);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), /* Stronger shadow */
+                -2px -2px 4px rgba(255, 255, 255, 0.2); /* Subtle light effect from top */
+}
+
+/* Styling for the Overview */
+.container h3 {
+    font-size: 24px;
+    color: #060705;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+}
+
+/* Overview Text */
+.container p {
+    font-size: 18px;
+    color: #0e0c0c;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Box Container for Links (Centering and horizontal flex) */
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between boxes */
+    margin-top: 40px; /* Spacing from the dashboard overview */
+}
+
+/* Styling for Dashboard Boxes with Unique Gradient Colors */
+.dashboard-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the boxes */
+}
+
+.dashboard-box {
+    display: block;
+    padding: 40px; /* Increase padding for bigger box size */
+    border-radius: 12px; /* Slightly rounded corners */
+    text-decoration: none;
+    color: white; /* White text */
+    font-size: 24px; /* Increase font size */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    transition: all 0.3s ease;
+    min-width: 220px; /* Wider box */
+    max-width: 280px; /* Limit max width */
+}
+
+/* Hover effect for all boxes */
+.dashboard-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual gradient background colors for each box */
+#box-1 {
+    background: linear-gradient(135deg, #56ab2f, #a8e063); /* Green gradients */
+}
+#box-2 {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Orange-pink gradients */
+}
+#box-3 {
+    background: linear-gradient(135deg, #43cea2, #185a9d); /* Blue-green gradients */
+}
+#box-4 {
+    background: linear-gradient(135deg, #654ea3, #eaafc8); /* Purple-pink gradients */
+}
+#box-5 {
+    background: linear-gradient(135deg, #ff512f, #dd2476); /* Red-purple gradients */
+}
+#box-6 {
+    background: linear-gradient(135deg, #36d1dc, #5b86e5); /* Aqua-blue gradients */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .dashboard-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

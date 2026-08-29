@@ -1,0 +1,50 @@
+<?php
+session_start();
+if ($_SESSION['role'] != 'student') {
+    header('Location: ../login.php');
+    exit();
+}
+
+include '../config/db.php';
+
+// Fetch all available courses
+$courses = $conn->query("SELECT course_id, course_name FROM courses")->fetchAll(PDO::FETCH_ASSOC);
+
+// Handle self-enrollment
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['enroll_in_course'])) {
+    $student_id = $_SESSION['user_id'];  // Assuming student is logged in
+    $course_id = $_POST['course_id'];
+
+    // Enroll the student in the selected course
+    $stmt = $conn->prepare("INSERT INTO enrollments (student_id, course_id) VALUES (:student_id, :course_id)");
+    $stmt->bindParam(':student_id', $student_id);
+    $stmt->bindParam(':course_id', $course_id);
+    $stmt->execute();
+
+    echo "You have successfully enrolled in the course!";
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enroll in a Course</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Available Courses for Enrollment</h2>
+
+        <!-- Form for Self-Enrollment -->
+        <form method="POST">
+            <select name="course_id" required>
+                <option value="">Select a Course</option>
+                <?php foreach ($courses as $course): ?>
+                    <option value="<?php echo $course['course_id']; ?>"><?php echo $course['course_name']; ?></option>
+                <?php endforeach; ?>
+            </select>
+            <button type="submit" name="enroll_in_course">Enroll in Course</button>
+        </form>
+    </div>
+</body>
+</html>
