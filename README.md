@@ -28,3 +28,24 @@ A complete Learning Management System built with PHP and MySQL, designed with se
 
 **Python Programming - Assignment 01 (Teacher Assignment)** 
 <img width="1875" height="863" alt="image" src="https://github.com/user-attachments/assets/5acd0ed1-2a0d-41dc-8761-8f7ab3054b60" />
+
+**Manage Quiz - (Teacher Quiz)**
+<img width="1862" height="847" alt="image" src="https://github.com/user-attachments/assets/3a93b883-39c1-4f48-9ea5-31af68df81d4" />
+
+**Teacher – Add Quiz**
+<img width="1781" height="876" alt="image" src="https://github.com/user-attachments/assets/2d2980c0-1f29-40a0-aaf1-05a885ae35ac" />
+
+**Student - Take Quiz**
+<img width="1901" height="867" alt="image" src="https://github.com/user-attachments/assets/65018d65-ad7b-4303-8c1c-ec2cb89612d5" />
+
+**Quiz Screen – Student**
+<img width="1775" height="880" alt="image" src="https://github.com/user-attachments/assets/f449c4dd-9bf4-4591-8942-174fef4ada11" />
+
+Quiz Results & Score – Student
+<img width="1608" height="860" alt="image" src="https://github.com/user-attachments/assets/5e715626-bd9d-441f-ade4-3f2a1ffc0775" />
+
+Teacher – Student Quiz Results
+<img width="1751" height="810" alt="image" src="https://github.com/user-attachments/assets/424f5a12-44e2-4613-ad7e-6a772407c380" />
+
+Student Assignment Marks
+<img width="1710" height="828" alt="image" src="https://github.com/user-attachments/assets/6b708e59-d8ff-4f41-ad8a-923cf00f8fed" />
